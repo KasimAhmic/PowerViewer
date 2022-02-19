@@ -14,7 +14,7 @@
     "build": "craco build",
     "test": "react-scripts test",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -u \"github-actions-bot <support+actions@github.com>\"",
     "eject": "react-scripts eject"
   },
   "dependencies": {
