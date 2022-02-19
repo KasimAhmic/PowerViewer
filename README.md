@@ -18,7 +18,11 @@
 ---
 
 ## Usage
-TODO: Finish this. Link to GitHub pages.
+
+1. Go to the [PowerViewer](https://kasimahmic.github.io/PowerViewer) homepage
+2. Fill in the name of the streamer and select the service they're on<br/>
+3. Click "Add Stream"
+4. Repeat for as many streams you wish to view <br/>
 
 ## Contributing
 
