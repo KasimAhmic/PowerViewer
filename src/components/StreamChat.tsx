@@ -1,22 +1,11 @@
-import React, { FC, useMemo } from 'react';
+import React, { FC } from 'react';
 import { Stream } from '../@types';
-import { hostname } from '../util';
+import { useEmbedUrl } from '../hooks';
 
 export const StreamChat: FC<Omit<Stream, 'id'>> = ({ service, username }) => {
-  const streamUrl = useMemo<string>(() => {
-    switch (service) {
-      case 'Twitch':
-        return `https://www.twitch.tv/embed/${username}/chat?parent=${hostname()}&darkpopout`;
-      case 'YouTube':
-        return `https://www.youtube.com/live_chat?v=${username}&embed_domain=${hostname()}`;
-      case 'Trovo':
-        return `https://trovo.live/chat/${username}`;
-      default:
-        return '';
-    }
-  }, [service, username]);
+  const streamUrl = useEmbedUrl('chat', service, username);
 
-  if (!Boolean(streamUrl)) return null;
+  if (!streamUrl) return null;
 
   return (
     <iframe

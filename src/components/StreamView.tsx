@@ -19,6 +19,7 @@ const useStyles = makeStyles()((theme) => ({
   },
   serviceName: {
     display: 'flex',
+    alignItems: 'center',
     justifyContent: 'space-between',
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
@@ -30,9 +31,10 @@ const useStyles = makeStyles()((theme) => ({
     textShadow: `0 1px 0 ${theme.palette.common.black}`,
   },
   streamVideo: {
+    backgroundColor: theme.palette.background.paper,
     borderBottomWidth: 1,
     borderBottomStyle: 'solid',
-    borderBottomColor: theme.palette.grey[400],
+    borderBottomColor: theme.palette.common.black,
     fontSize: 0,
   },
   streamChat: {
@@ -48,14 +50,14 @@ export const StreamView: FC<Stream> = memo(({ id, service, username }) => {
 
   const dispatch = useAppDispatch();
 
-  const close = () => {
-    dispatch(removeStream(id));
-  };
+  const close = () => dispatch(removeStream(id));
 
   return (
     <Paper elevation={3} className={classes.root}>
       <div className={classes.serviceName}>
-        <Typography variant='h6'>{service}</Typography>
+        <Typography variant='body1'>
+          {service} - {username}
+        </Typography>
 
         <IconButton size='small' onClick={close}>
           <Close />
