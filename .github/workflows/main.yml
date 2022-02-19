@@ -33,4 +33,4 @@ jobs:
       - name: Build and deploy
         run: yarn run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
