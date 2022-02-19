@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PowerViewer/static/css/main.4335af43.css",
+    "main.js": "/PowerViewer/static/js/main.a12e7e4e.js",
+    "index.html": "/PowerViewer/index.html",
+    "main.4335af43.css.map": "/PowerViewer/static/css/main.4335af43.css.map",
+    "main.a12e7e4e.js.map": "/PowerViewer/static/js/main.a12e7e4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4335af43.css",
+    "static/js/main.a12e7e4e.js"
+  ]
+}
