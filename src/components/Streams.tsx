@@ -20,13 +20,8 @@ export const Streams: FC = () => {
 
   return (
     <div className={classes.root}>
-      {streams.map((stream, index) => (
-        <StreamView
-          id={stream.id}
-          service={stream.service}
-          username={stream.username}
-          key={`${stream.username}-${stream.service}-${index}`}
-        />
+      {streams.map((stream) => (
+        <StreamView id={stream.id} service={stream.service} username={stream.username} key={stream.id} />
       ))}
     </div>
   );
