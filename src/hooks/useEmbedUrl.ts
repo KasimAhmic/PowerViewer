@@ -2,11 +2,9 @@ import { useMemo } from 'react';
 import { StreamService } from '../@types';
 import { hostname } from '../util';
 
-export const useEmbedUrl = (
-  resource: 'video' | 'chat',
-  service: StreamService,
-  username: string,
-): string | null => {
+export type Resource = 'video' | 'chat';
+
+export const useEmbedUrl = (resource: Resource, service: StreamService, username: string): string | null => {
   return useMemo(() => {
     switch (service) {
       case 'Twitch':
