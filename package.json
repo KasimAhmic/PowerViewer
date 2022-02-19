@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A multi stream/chat viewer",
   "main": "index.js",
+  "homepage": "https://kasimahmic.github.io/PowerViewer",
   "repository": "https://github.com/KasimAhmic/PowerViewer.git",
   "author": "Kasim Ahmic <kasim.ahmic@gmail.com>",
   "license": "MIT",
@@ -12,6 +13,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "react-scripts test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -42,6 +45,7 @@
     "@craco/craco": "^6.4.3",
     "@types/uuid": "^8.3.4",
     "craco-esbuild": "^0.5.0",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
     "prettier": "^2.5.1"
