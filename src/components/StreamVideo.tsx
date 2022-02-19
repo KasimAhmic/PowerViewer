@@ -2,6 +2,8 @@ import React, { FC, useMemo } from 'react';
 import { Stream } from '../@types';
 
 export const StreamVideo: FC<Omit<Stream, 'id'>> = ({ service, username }) => {
+  console.log(process.env.NODE_ENV);
+
   const streamUrl = useMemo<string>(() => {
     switch (service) {
       case 'Twitch':

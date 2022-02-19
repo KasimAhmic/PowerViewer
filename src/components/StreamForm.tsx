@@ -73,11 +73,11 @@ export const StreamForm = () => {
 
   const dispatch = useAppDispatch();
 
-  const [service, setService] = useState<StreamService>();
+  const [service, setService] = useState<StreamService | ''>('');
   const [username, setUsername] = useState<string>('');
 
   const submit = () => {
-    if (Boolean(service) && typeof service !== 'undefined' && Boolean(username)) {
+    if (Boolean(service) && service !== '' && Boolean(username)) {
       dispatch(addStream({ id: v4(), service, username }));
     }
   };
