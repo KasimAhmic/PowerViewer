@@ -1,7 +1,7 @@
 {
   "name": "power-viewer",
   "version": "1.0.0",
-  "description": "A multi stream/chat viewer",
+  "description": "A web app for monitoring your stream across streaming services",
   "main": "index.js",
   "homepage": "https://kasimahmic.github.io/PowerViewer",
   "repository": "https://github.com/KasimAhmic/PowerViewer.git",

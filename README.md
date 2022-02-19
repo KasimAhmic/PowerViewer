@@ -1,6 +1,6 @@
 <div align="center">
   <h1>PowerViewer</h1>
-  <h5>A web app aimed at streamers who want to view their streams across multiple services.</h5>
+  <h5>A web app for monitoring your stream across streaming services</h5>
 </div>
 
 <div align="center">
