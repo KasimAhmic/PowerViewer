@@ -1,0 +1,92 @@
+{
+  "name": "power-viewer",
+  "version": "1.0.0",
+  "description": "A multi stream/chat viewer",
+  "main": "index.js",
+  "repository": "https://github.com/KasimAhmic/PowerViewer.git",
+  "author": "Kasim Ahmic <kasim.ahmic@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "pre-commit": "lint-staged",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.4.1",
+    "@mui/material": "^5.4.1",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.0",
+    "react-scripts": "5.0.0",
+    "tss-react": "^3.4.1",
+    "typescript": "~4.1.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@craco/craco": "^6.4.3",
+    "@types/uuid": "^8.3.4",
+    "craco-esbuild": "^0.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "jsxSingleQuote": true,
+    "printWidth": 110,
+    "singleQuote": true,
+    "semi": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "subject-case": [
+        2,
+        "always",
+        [
+          "sentence-case"
+        ]
+      ]
+    }
+  },
+  "lint-staged": {
+    "src/**/*.+(js,css,md,ts,tsx)": "prettier --write"
+  }
+}
