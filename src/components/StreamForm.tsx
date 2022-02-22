@@ -47,7 +47,7 @@ const useStyles = makeStyles()((theme) => ({
       paddingBottom: theme.spacing(0.8),
     },
     '& legend': {
-      color: '#ffffff !important',
+      color: `${theme.palette.common.white} !important`,
     },
     '& .MuiOutlinedInput-notchedOutline': {
       color: theme.palette.common.white,
