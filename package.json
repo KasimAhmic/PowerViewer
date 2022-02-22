@@ -12,9 +12,10 @@
     "pre-commit": "lint-staged",
     "start": "craco start",
     "build": "craco build",
-    "test": "react-scripts test",
+    "test": "craco test --watchAll=false --coverage",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build -u \"github-actions-bot <support+actions@github.com>\"",
+    "release": "standard-version",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -49,7 +50,8 @@
     "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "standard-version": "^9.3.2"
   },
   "eslintConfig": {
     "extends": "react-app"
