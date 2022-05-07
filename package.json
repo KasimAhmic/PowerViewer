@@ -1,11 +1,11 @@
 {
   "name": "power-viewer",
   "version": "1.0.3",
-  "description": "A web app for monitoring your stream across streaming services",
+  "description": "A web app for monitoring your stream across streaming platforms",
   "main": "index.js",
   "homepage": "https://kasimahmic.github.io/PowerViewer",
   "repository": "https://github.com/KasimAhmic/PowerViewer.git",
-  "author": "Kasim Ahmic <kasim.ahmic@gmail.com>",
+  "author": "Kasim Ahmic <kasim.ahmic@gmail.com> (https://kasimahmic.com/)",
   "license": "MIT",
   "private": true,
   "scripts": {

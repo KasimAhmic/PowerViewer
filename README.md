@@ -1,6 +1,6 @@
 <div align="center">
   <h1>PowerViewer</h1>
-  <h5>A web app for monitoring your stream across streaming services</h5>
+  <h5>A web app for monitoring your stream across streaming platforms</h5>
 </div>
 
 <div align="center">
@@ -20,9 +20,9 @@
 ## Usage
 
 1. Go to the [PowerViewer](https://kasimahmic.github.io/PowerViewer) homepage
-2. Fill in the name of the streamer and select the service they're on<br/>
+2. Fill in the name of the streamer and select the service they're on
 3. Click "Add Stream"
-4. Repeat for as many streams you wish to view <br/>
+4. Repeat for as many streams you wish to view
 
 ## Contributing
 
