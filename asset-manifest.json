@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PowerViewer/static/css/main.0d6535f5.css",
-    "main.js": "/PowerViewer/static/js/main.8fb99deb.js",
+    "main.js": "/PowerViewer/static/js/main.fafbabd0.js",
     "index.html": "/PowerViewer/index.html",
     "main.0d6535f5.css.map": "/PowerViewer/static/css/main.0d6535f5.css.map",
-    "main.8fb99deb.js.map": "/PowerViewer/static/js/main.8fb99deb.js.map"
+    "main.fafbabd0.js.map": "/PowerViewer/static/js/main.fafbabd0.js.map"
   },
   "entrypoints": [
     "static/css/main.0d6535f5.css",
-    "static/js/main.8fb99deb.js"
+    "static/js/main.fafbabd0.js"
   ]
 }
