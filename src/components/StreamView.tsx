@@ -14,6 +14,8 @@ const useStyles = makeStyles()((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     flexGrow: 1,
+    width: '100%',
+    maxWidth: '33.33%',
     height: '100%',
     overflow: 'hidden',
   },
