@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import { App } from './app/App';
 import { store } from './app/store';
@@ -15,7 +15,11 @@ export const muiCache = createCache({
   prepend: true,
 });
 
-ReactDOM.render(
+const container = document.getElementById('root') as HTMLElement;
+
+const root = createRoot(container);
+
+root.render(
   <React.StrictMode>
     <CacheProvider value={muiCache}>
       <ThemeProvider theme={theme}>
@@ -26,7 +30,6 @@ ReactDOM.render(
       </ThemeProvider>
     </CacheProvider>
   </React.StrictMode>,
-  document.getElementById('root'),
 );
 
 // TODO: Figure out how to use this
