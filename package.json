@@ -1,6 +1,6 @@
 {
   "name": "power-viewer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A web app for monitoring your stream across streaming platforms",
   "main": "index.js",
   "homepage": "https://kasimahmic.github.io/PowerViewer",
